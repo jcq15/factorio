@@ -1,11 +1,31 @@
-output 第一个是主产物，其他是副产物
+# 异星工场产量计算工具
 
-新版本 pyqt5 新版本在site-packages\qt5_applications\Qt\bin下
+## 快速开始
 
-QtDesigner 生成 py 文件：
+获取：
 
 ```shell
-pyuic5 -o ui.py ui.ui
+git clone git@github.com:jcq15/factorio.git
 ```
+
+安装依赖：
+
+```shell
+pip install -r requirements.txt
+```
+
+运行后端：
+
+```shell
+python backend.py
+```
+
+打开 `127.0.0.1:5000/` 即可。
+
+## To Do
+
+装机数支持小数，表示间歇工作。此时需要算工作时间，结合满载功率和待机功率算。
+
+## 参考链接
 
 联动下拉框：https://github.com/ciaoca/cxSelect
